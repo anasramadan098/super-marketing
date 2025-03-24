@@ -652,7 +652,7 @@ section.join {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid var(--black-color);
+            border: 3px solid var(--black-color);
             border-radius: 100px;
             position: relative;
             transition: .3s;
