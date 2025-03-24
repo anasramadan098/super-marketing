@@ -32,7 +32,6 @@ ul {
     list-style: none;
 }
 .btn {
-    display: flex;
     span {
         background-color: #333;
         color: #fff;
