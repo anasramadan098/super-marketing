@@ -1,0 +1,106 @@
+section.member {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    gap: 5%;
+    h4 {
+        font-size: 3em;
+        color: #fff;
+        span {
+            color: var(--main-color);
+        }
+    }
+    .main {
+        h6 {
+            color: var(--main-color);
+            font-size: 1em;
+        }
+        .text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            h5 {
+                color: #fff;
+                font-size: 2.2em;
+            }
+            .social {
+                a i {
+                    color: var(--main-color);
+                    border: 1px solid var(--main-color);
+                    padding: 12px;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    transition: .2s;
+                    &:hover {
+                        background-color: var(--main-color);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .box {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                padding: 20px 0;
+                &:first-child {
+                    border-bottom: 1px solid #FFFFFF1A;
+                }
+                i {
+                    color: var(--main-color);
+                    font-size: 2em;
+                    padding: 20px;
+                    border-radius: 50%;
+                    backdrop-filter: blur(50px);
+                    border: 1px solid #FFFFFF1A;
+                }
+                .adds {
+                    h5 {
+                        color: #fff;
+                        font-size: 1.4em;
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        color: #eee;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+        .part {
+            margin-top: 70px;
+            p {
+                line-height: 2;
+                color: #eee;
+                margin: 20px 0;
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                    width: calc(100% / 2);
+                    p {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .side {
+        width: 45%;
+        .img {
+            width: 400px;
+            margin-bottom: 50px;
+            img {
+                aspect-ratio: 1 / 1.2;
+                object-fit: contain;
+            }
+        }
+    }
+}
