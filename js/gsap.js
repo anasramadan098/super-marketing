@@ -91,7 +91,6 @@ document.querySelectorAll('.link-drop-menu').forEach(link => {
     })
     link.addEventListener('mouseleave', () => {
         dropDown.classList.remove('show');
-
     })
 })
 
@@ -159,7 +158,7 @@ const aboutTl = gsap.timeline({
         scroller: 'body',
         start: "top -5%",
         end: "bottom 0%",
-      },
+    },
     
 });
 const aboutSection = document.querySelector('section.about');
