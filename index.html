@@ -651,7 +651,7 @@
                 </div>
                 <div class="footer">
                     <p>
-                        Step <span>01</span>
+                        Step <span>02</span>
                     </p>
                     <div class="icon">
                         <i class="fas fa-search"></i>
@@ -675,7 +675,7 @@
                 </div>
                 <div class="footer">
                     <p>
-                        Step <span>01</span>
+                        Step <span>03</span>
                     </p>
                     <div class="icon">
                         <i class="fas fa-search"></i>
@@ -691,7 +691,7 @@
             <div class="close-video">
                 <i class="fas fa-times"></i>
             </div>
-            <video src="imgs/bg.mp4" loop muted autoplay>
+            <video src="imgs/bg.mp4" loop controls>
                 <source src="imgs/bg.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -726,6 +726,8 @@
             right: 10px;
             color: white;
             cursor: pointer;
+            z-index: 1000;
+            font-size: 2em;
         }
 
         video {
@@ -741,6 +743,8 @@
             font-size: 3rem;
             color: white;
             cursor: pointer;
+            z-index: 1000;
+            font-size: 2em;
         }
     </style>
 
@@ -808,12 +812,12 @@
             <div class="card" data-category="Branding & Identity">
                 <div class="img">
                     <img src="imgs/project-1.jpg" alt="">
-                    <a href="#" class="arrow-button">
+                    <a href="#" onclick="openVideo()" class="arrow-button">
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <h3>
-                    <a onclick="openVideo()">
+                    <a href="#" onclick="openVideo()">
                         Marketing Video For B.TECH SCHOOL
                     </a>
                 </h3>
