@@ -16,6 +16,10 @@ const clone = list.cloneNode(true);
 parent.append(clone)
 
 
+setInterval(() => {
+    scrollTo(0 , scrollY);
+}, 500);
+
 
 
 // Active Class
