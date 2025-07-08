@@ -21,6 +21,32 @@ setInterval(() => {
 }, 500);
 
 
+// Category
+document.querySelectorAll('section.portfolio .categories .category').forEach( span => {
+    // Event
+    span.addEventListener('click' , () => {     
+        const cards = document.querySelectorAll('section.portfolio .card') ;
+        console.log(span.dataset.category == 'all' , "ALL")
+        if (span.dataset.category.toLowerCase() == 'all') {
+            cards.forEach(card => {
+                card.classList.remove('hide')
+                card.classList.add('move-to-front');
+            });
+        } else {
+            cards.forEach(card => {
+            console.log(card.dataset.category.toLowerCase() , span.dataset.category.toLowerCase() , "AS")
+            if (card.dataset.category.toLowerCase() == span.dataset.category.toLowerCase()) {
+                card.classList.remove('hide');
+                card.classList.add('move-to-front');
+            } else {
+                card.classList.add('hide');
+                card.classList.remove('move-to-front');
+            }
+        });
+        }  
+    })
+});
+
 
 // Active Class
 // document.querySelectorAll('section.why .benifits .benifit').forEach( e => {
