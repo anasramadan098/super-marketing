@@ -1354,7 +1354,22 @@ footer {
 
 @media (max-width : 786px) {
     header {
-        display: none;
+        flex-direction: column;
+        padding: 10px;
+        align-items: end;
+        nav {
+            flex-direction: column;
+            gap: 5px;
+            .logo {
+                width: 55%;
+            }
+            ul {
+                margin-bottom: 20px;
+                a {
+                    font-size: 0.8em;
+                }
+            }
+        }
     }
     .title {
         .head {
@@ -1374,12 +1389,13 @@ footer {
         }
     }
     section.welcome {
+        padding-top: 250px;
         h2 {
             font-size: 3em;
             text-align: center;
         }
         p {
-            font-size: 1.1em;
+            font-size: 0.9em;
         }
         .adds {
             flex-direction: column;
