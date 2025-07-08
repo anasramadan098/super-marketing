@@ -746,6 +746,87 @@
         </div>
     </section>
     <!-- End How -->
+    <!-- Start Video Container -->
+    <div class="video-container" style="display: none;">
+        <div class="video-holder">
+            <div class="close-video">
+                <i class="fas fa-times"></i>
+            </div>
+            <video src="imgs/bg.mp4" loop muted autoplay>
+                <source src="imgs/bg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="play-video">
+            <i class="fas fa-play"></i>
+        </div>
+    </div>
+    <style>
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .video-holder {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .close-video {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .play-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function openVideo() {
+            document.querySelector('.video-container').style.display = 'flex';
+        }
+
+        document.querySelector('.close-video').addEventListener('click', function () {
+            document.querySelector('.video-container').style.display = 'none';
+        });
+
+        document.querySelector('.play-video').addEventListener('click', function () {
+            const video = document.querySelector('.video-holder video');
+            if (video.paused) {
+                video.play();
+                this.style.display = 'none';
+            } else {
+                video.pause();
+                this.style.display = 'block';
+            }
+        });
+    </script>
+    <!-- End Video Container -->
+      
     <!-- Start Portfolio -->
     <section class="portfolio" id="porto">
         <div class="title">
@@ -775,16 +856,13 @@
                 All
             </span>
             <span class="category">
-                Branding
+                Website Development
             </span>
             <span class="category">
                 Graphic Design
             </span>
             <span class="category">
-                Content Writing
-            </span>
-            <span class="category">
-                Website Development
+                Vieo Edit
             </span>
         </div>
         <div class="cards">
@@ -796,8 +874,8 @@
                     </a>
                 </div>
                 <h3>
-                    <a href="#">
-                        Dynamic E-Commerce Platform
+                    <a onclick="openVideo()">
+                        Marketing Video For B.TECH SCHOOL
                     </a>
                 </h3>
             </div>
