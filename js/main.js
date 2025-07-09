@@ -34,7 +34,6 @@ document.querySelectorAll('section.portfolio .categories .category').forEach( sp
             });
         } else {
             cards.forEach(card => {
-            console.log(card.dataset.category.toLowerCase() , span.dataset.category.toLowerCase() , "AS")
             if (card.dataset.category.toLowerCase() == span.dataset.category.toLowerCase()) {
                 card.classList.remove('hide');
                 card.classList.add('move-to-front');
