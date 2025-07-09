@@ -853,6 +853,7 @@ section.portfolio {
         .card {
             width: calc(100% / 3 - 30px);
             position: relative;
+            transition: .3s;
             &.hide {
                 opacity: 0;
                 pointer-events: none;
