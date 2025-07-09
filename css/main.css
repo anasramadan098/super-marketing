@@ -853,6 +853,11 @@ section.portfolio {
         .card {
             width: calc(100% / 3 - 30px);
             position: relative;
+            &.hide {
+                opacity: 0;
+                pointer-events: none;
+                transform: scale(0);
+            }
             &::after {
                 content: attr(data-category);
                 background-color: #FFFFFF1A;
